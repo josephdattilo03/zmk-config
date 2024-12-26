@@ -57,5 +57,20 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+        
+
+                adj_layer {
+// -----------------------------------------------------------------------------------------
+// | RGB_BRI+ | RGB_SAT+ | RGB_HUE+ | RGB_ANI+ |    | RGB_TOGGLE |    |    |    |    |    |    |    |
+// | RGB_BRI- | RGB_SAT- | RGB_HUE- | RGB_ANI- |    |            |    |    |    |    |    |    |    |
+// |          |          |          |          |    |            |    |    |    |    |    |    |    |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &trans &rgb_ug RGB_TOG &trans &trans &trans &trans &trans &trans
+   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
         };
 };
