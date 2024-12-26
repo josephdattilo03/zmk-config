@@ -61,14 +61,14 @@
 
                 config_layer {
 // -----------------------------------------------------------------------------------------
-// | RGB_BRI+ | RGB_SAT+ | RGB_HUE+ |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | RGB_BRI- | RGB_SAT- | RGB_HUE- |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// |   SHFT   |          |          |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | RGB_BRI+ | RGB_SAT+ | RGB_HUE+ | RGB_ANI+ |    | RGB_TOG |   |    |    |    |    |    |     |
+// | RGB_BRI- | RGB_SAT- | RGB_HUE- | RGB_ANI- |    |         |   |    |    |    |    |    |     |
+// |          |          |          |          |    |         |   |    |    |    |    |    |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &rgb_ug RGB_BRD  &rgb_ug RGB_SAD   &rgb_ug RGB_HUD  &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+   &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &trans &rgb_ug RGB_TOG  &trans &trans  &trans &trans &trans &trans
+   &rgb_ug RGB_BRD  &rgb_ug RGB_SAD   &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &trans   &trans      &trans &trans &trans  &trans &trans &trans
+   &trans &trans   &trans &trans   &trans   &trans      &trans &trans  &trans  &trans &trans &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
