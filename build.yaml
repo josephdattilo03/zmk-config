@@ -19,18 +19,18 @@
 #
 ---
 include:
-  - board: nice_nano//zmk
+  - board: nice_nano@2//zmk
     shield: corne_left
     artifact-name: corne_left
-  - board: nice_nano//zmk
+  - board: nice_nano@2//zmk
     shield: corne_right
     artifact-name: corne_right
-  - board: nice_nano//zmk
+  - board: nice_nano@2//zmk
     shield: lily58_left
     artifact-name: lily58_left
-  - board: nice_nano//zmk
+  - board: nice_nano@2//zmk
     shield: lily58_right
     artifact-name: lily58_right
-  - board: nice_nano//zmk
+  - board: nice_nano@2//zmk
     shield: settings_reset
     artifact-name: settings_reset
