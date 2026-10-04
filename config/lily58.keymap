@@ -81,3 +81,18 @@
 &nice_view_spi {
     cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 };
+
+/* PandaKB Lily58 hardware differences from the stock ZMK lily58 shield */
+&led_strip {
+    chain-length = <36>; /* 6 underglow + 30 per-key */
+};
+
+/ {
+    chosen {
+        zmk,battery = &vbatt_vddh;
+    };
+
+    vbatt_vddh: vbatt_vddh {
+        compatible = "zmk,battery-nrf-vddh";
+    };
+};
